@@ -3,13 +3,13 @@
  */
 enum DCmotion {
 	//% block="Forward"
-	Forward,
+	Forward111,
 	//% block="Backward"
-	Backward,
+	Backward222,
 	//% block="Brake"
-	Brake,
+	Brake333,
 	//% block="Coast"
-	Coast
+	Coast444
 }
 
 enum connectorDCMotor {
