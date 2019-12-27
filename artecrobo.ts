@@ -2,8 +2,8 @@
  * Types of DC motor control
  */
 enum DCmotion {
-	//% block="Forward1111"
-	Forward1111,
+	//% block="Forward11111111"
+	Forward11111111,
 	//% block="Backward"
 	Backward,
 	//% block="Brake"
@@ -44,9 +44,9 @@ namespace artecrobo {
 	//% block="DC motor %_connector| motion: %_motion"
 	export function moveDCMotor(_connector: connectorDCMotor, _motion: DCmotion): void {
 		switch(_motion) {
-			case DCmotion.Forward1111:
+			case DCmotion.Forward11111111:
 				/*
-					Move Forward1111
+					Move Forward11111111
 					M1:P8 = speed, P12 = 0
 					M2:P0 = speed, P16 = 0
 				*/
@@ -115,7 +115,7 @@ namespace artecrobo {
 		} else {
 			speedM2 = 1023 - _speed;
 		}
-		if (state == DCmotion.Forward1111 || state == DCmotion.Backward) {
+		if (state == DCmotion.Forward11111111 || state == DCmotion.Backward) {
 			moveDCMotor(_connector, state);
 		}
 	}
